@@ -10,5 +10,3 @@ def cria_novo_cliente():
     N_cliente = (f" Nome: {nome}\n Número de Contato: {numero}\n Morada: {morada}\n Nº de Morada: {Nmorada}\n Código Postal: {cp}\n NIF: {nif}\n Email: {mail}")
     
     return N_cliente
-
-print(cria_novo_cliente())
