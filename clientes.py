@@ -1,7 +1,7 @@
+from io_terminal import imprime_lista
+
 def cria_novo_cliente():
-    """pede e recebe do ultilizador os dados de um novo clientes, guarda-os numa lista e então
-      devolve essa lista
-    """
+
     nome = input('Nome Completo: ')
     numero = input('Número de Contato: ')
     morada = input('Morada: ')
@@ -19,4 +19,7 @@ def cria_novo_cliente():
                     "Email": mail}
     
     return novo_cliente
-    
+
+def imprime_lista_de_clientes(lista_de_clientes):
+
+  imprime_lista(cabecalho="Lista de Clientes", lista=lista_de_clientes)
