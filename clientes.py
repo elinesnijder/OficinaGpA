@@ -1,5 +1,7 @@
 from io_terminal import imprime_lista
 
+nome_ficheiro_lista_de_clientes = "lista_de_clientes.pk"
+
 def cria_novo_cliente():
 
     nome = input('Nome Completo: ')
