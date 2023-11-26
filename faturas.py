@@ -8,14 +8,14 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
 
     id_cliente = pergunta_id(questao="Qual o id do cliente?", lista=lista_de_clientes, mostra_lista=True)
     id_veiculo = pergunta_id(questao="Qual o id do veiculo?", lista=lista_de_veiculos, mostra_lista=True)
-    descricaos_serviço = print(input("Resumo de serviço: "))
-    valor = print(input("Valor: "))
+    descricaos_servico = input("Resumo de serviço: ")
+    valor = input("Valor: ")
 
 
     fatura = {"cliente": id_cliente,
               "veiculo": id_veiculo,
               "data": date.today(),
-              "descricao": descricaos_serviço,
+              "descricao": descricaos_servico,
               "valor": valor}
 
     return fatura
