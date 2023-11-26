@@ -1,4 +1,7 @@
 def cria_novo_cliente():
+    """pede e recebe do ultilizador os dados de um novo clientes, guarda-os numa lista e então
+      devolve essa lista
+    """
     nome = input('Nome Completo: ')
     numero = input('Número de Contato: ')
     morada = input('Morada: ')
@@ -7,6 +10,14 @@ def cria_novo_cliente():
     nif = input('NIF: ')
     mail = input('Email: ')
 
-    N_cliente = (f" Nome: {nome}\n Número de Contato: {numero}\n Morada: {morada}\n Nº de Morada: {Nmorada}\n Código Postal: {cp}\n NIF: {nif}\n Email: {mail}")
+    novo_cliente = {"Nome": nome,
+                    "Número de Contato": numero,
+                    "Morada": morada,
+                    "Nº de Morada": Nmorada,
+                    "Código Postal": cp,
+                    "NIF": nif,
+                    "Email": mail}
     
-    return N_cliente
+    return novo_cliente
+
+    
